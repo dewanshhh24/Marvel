@@ -1,0 +1,39 @@
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.characterCard {
+  width: 180px;
+  height: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.characterCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  bottom: 0;
+  transition: opacity 0.3s ease;
+}
+
+.caption.bottom {
+  bottom: 0;
+  font-weight: bold;
+}
