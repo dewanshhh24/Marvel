@@ -54,10 +54,6 @@ The project is structured in a way that allows **easy re-integration of the API 
 - Node.js (v16+ recommended)
 - npm
 
-### Installation
-
-```bash
-npm install
 
 
 
